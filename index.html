@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ala-Too | Kyrgyz Restaurant</title>
+  <meta name="description" content="Ala-Too (Ала-Тоо) serves traditional Kyrgyz cooking: beshbarmak, plov, manty, lagman, boorsok, kuurdak and fragrant tea, with mountain hospitality.">
+  <meta name="theme-color" content="#13233c">
+  <meta property="og:title" content="Ala-Too | Kyrgyz Restaurant">
+  <meta property="og:description" content="Traditional Kyrgyz cooking and warm mountain hospitality.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Ala-Too, back to top">
+        <svg class="brand-mark" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+          <circle cx="20" cy="14" r="6" fill="#e8a923"/>
+          <path d="M2 34 L14 16 L20 25 L27 12 L38 34 Z" fill="currentColor"/>
+          <path d="M27 12 L23.5 18 L26 17.2 L27.5 19 L29.5 17 L31.5 18.2 Z" fill="#fbf6ec"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Ala-Too</span>
+          <span class="brand-sub" lang="ky">Ала-Тоо</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#story">Our story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+
+      <button class="cart-button" id="cart-toggle" type="button" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+          <path d="M5 8h14l-1.2 12H6.2L5 8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="cart-label">Order</span>
+        <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+        <span class="visually-hidden" id="cart-count-sr">0 items in your order</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="hero-art" viewBox="0 0 1600 800" preserveAspectRatio="xMaxYMax slice" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="hero-sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#0d1a2e"/>
+            <stop offset="0.5" stop-color="#25385a"/>
+            <stop offset="0.8" stop-color="#b9643f"/>
+            <stop offset="1" stop-color="#f0b25a"/>
+          </linearGradient>
+          <linearGradient id="hero-meadow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#21443d"/>
+            <stop offset="1" stop-color="#132925"/>
+          </linearGradient>
+        </defs>
+        <rect width="1600" height="800" fill="url(#hero-sky)"/>
+
+        <g opacity="0.95">
+          <circle cx="1380" cy="330" r="120" fill="none" stroke="#f4b73a" stroke-width="30" pathLength="40" stroke-dasharray="0.5 0.5"/>
+          <circle cx="1380" cy="330" r="86" fill="#f4b73a"/>
+        </g>
+
+        <path fill="#7389ab" d="M0 560 L120 470 L210 520 L340 380 L470 500 L560 450 L700 540 L820 400 L960 520 L1080 440 L1200 530 L1340 430 L1460 500 L1600 440 L1600 800 L0 800 Z"/>
+        <g fill="#eef2f7" opacity="0.92">
+          <path d="M340 380 L305 430 L324 424 L340 446 L356 424 L378 432 Z"/>
+          <path d="M820 400 L786 450 L806 444 L820 464 L838 442 L856 452 Z"/>
+          <path d="M1080 440 L1054 478 L1070 474 L1082 488 L1096 472 L1108 480 Z"/>
+          <path d="M1340 430 L1312 470 L1328 466 L1342 482 L1356 464 L1372 472 Z"/>
+        </g>
+
+        <path fill="#44597d" d="M0 640 L150 520 L260 590 L430 440 L590 580 L760 500 L900 600 L1050 460 L1210 590 L1400 510 L1600 600 L1600 800 L0 800 Z"/>
+        <g fill="#dde5ef" opacity="0.9">
+          <path d="M430 440 L392 494 L414 488 L432 510 L452 486 L474 496 Z"/>
+          <path d="M1050 460 L1018 506 L1038 500 L1052 520 L1070 498 L1088 508 Z"/>
+          <path d="M760 500 L738 532 L752 528 L762 540 L774 526 L786 534 Z"/>
+        </g>
+
+        <path fill="#1e3050" d="M0 700 L180 620 L340 690 L520 630 L720 700 L940 640 L1160 700 L1360 650 L1600 710 L1600 800 L0 800 Z"/>
+        <path fill="url(#hero-meadow)" d="M0 730 Q400 690 800 735 T1600 715 L1600 800 L0 800 Z"/>
+
+        <g>
+          <path d="M1262 740 Q1340 640 1418 740 Z" fill="#f1e7d3"/>
+          <rect x="1262" y="738" width="156" height="52" fill="#e3d4b3"/>
+          <rect x="1262" y="738" width="156" height="8" fill="#b3261e"/>
+          <path d="M1318 790 L1318 756 Q1340 744 1362 756 L1362 790 Z" fill="#7a2a1c"/>
+          <circle cx="1340" cy="672" r="9" fill="none" stroke="#b3261e" stroke-width="3"/>
+          <path d="M1340 664 L1340 680 M1332 672 L1348 672" stroke="#b3261e" stroke-width="2"/>
+        </g>
+      </svg>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Kyrgyz kitchen &middot; mountain hospitality</p>
+        <h1 id="hero-title">
+          <span class="hero-title-main">Ala-Too</span>
+          <span class="hero-title-sub" lang="ky">Ала-Тоо</span>
+        </h1>
+        <p class="hero-lead">Slow-simmered broths, hand-pulled noodles and fragrant tea, served the way guests are welcomed beneath the Tian Shan: generously, and with time to linger.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore the menu</a>
+          <a class="btn btn-ghost" href="#story">Our story</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-band" aria-hidden="true"></div>
+
+    <section class="section story" id="story" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <div class="story-copy">
+          <p class="eyebrow eyebrow-dark">Our story</p>
+          <h2 id="story-title">A table set like a mountain feast</h2>
+          <p>The name Ala-Too comes from the variegated peaks that rise across Kyrgyzstan, snow on top and green pasture below. For generations, families there have gathered around a shared dastarkhan: a spread of bread, sweets, tea and slow-cooked dishes that never seems to run out.</p>
+          <p>Our kitchen is built on that idea. We simmer meat and onions for hours, roll and pull noodles by hand, fry boorsok to order and keep the teapot full. Nobody should leave a Kyrgyz table hungry, or in a hurry.</p>
+          <p class="note">Note: this story is sample copy for the website template. Replace it with your own restaurant's history before launch.</p>
+        </div>
+        <ul class="values" aria-label="What guides our kitchen">
+          <li>
+            <h3>Konok-kut</h3>
+            <p>In Kyrgyz tradition, a guest is a blessing. Every table is treated that way, from the first cup of tea to the last.</p>
+          </li>
+          <li>
+            <h3>Slow cooking</h3>
+            <p>Broths, stews and plov are given the time they need. Flavor from the pot cannot be rushed.</p>
+          </li>
+          <li>
+            <h3>The shared dish</h3>
+            <p>Many of our plates are made for sharing. Order a few, pass them around and talk.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-dark">Menu</p>
+          <h2 id="menu-title">From the Kyrgyz table</h2>
+          <p class="section-lead">Prices are in US dollars. Add dishes to your order and review the estimated total at any time.</p>
+        </div>
+
+        <div class="filters" id="menu-filters" role="group" aria-label="Filter menu by category"></div>
+
+        <ul class="menu-grid" id="menu-grid" aria-live="polite">
+          <li class="menu-fallback">The menu needs JavaScript to load. Please enable it, or ask our team about today's dishes.</li>
+        </ul>
+        <p class="menu-note">Please tell us about any allergies before ordering. Dishes may contain wheat, dairy, eggs, sesame or nuts.</p>
+      </div>
+    </section>
+
+    <div class="ornament-band" aria-hidden="true"></div>
+
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-dark">Visit us</p>
+          <h2 id="visit-title">Come hungry, stay for tea</h2>
+        </div>
+
+        <div class="visit-grid">
+          <div class="info-card">
+            <h3>Opening hours</h3>
+            <table class="hours">
+              <caption class="visually-hidden">Opening hours (sample)</caption>
+              <thead class="visually-hidden">
+                <tr><th scope="col">Days</th><th scope="col">Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Monday &ndash; Thursday</th><td>11:00 &ndash; 21:00</td></tr>
+                <tr><th scope="row">Friday &ndash; Saturday</th><td>11:00 &ndash; 22:00</td></tr>
+                <tr><th scope="row">Sunday</th><td>12:00 &ndash; 20:00</td></tr>
+              </tbody>
+            </table>
+            <p class="note">Sample hours. Update before launch.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Contact</h3>
+            <dl class="contact-list">
+              <div>
+                <dt>Address</dt>
+                <dd>[Street address to be added]</dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd>[Phone number to be added]</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd>[hello@your-domain.example]</dd>
+              </div>
+            </dl>
+            <p class="note">Placeholder details. No real address or phone number is published here.</p>
+          </div>
+
+          <figure class="map-placeholder">
+            <svg viewBox="0 0 400 300" role="img" aria-labelledby="map-title map-desc">
+              <title id="map-title">Map placeholder</title>
+              <desc id="map-desc">A stylized map with a location pin. Replace this with an embedded map once the restaurant location is confirmed.</desc>
+              <rect width="400" height="300" fill="#e9dfc9"/>
+              <path d="M0 210 Q100 170 200 200 T400 180" fill="none" stroke="#bcd4d6" stroke-width="22"/>
+              <path d="M40 0 L120 300 M0 120 L400 90 M260 0 L300 300" stroke="#fbf6ec" stroke-width="10" fill="none"/>
+              <path d="M200 90 C200 70 214 56 230 56 C246 56 260 70 260 90 C260 116 230 148 230 148 C230 148 200 116 200 90 Z" fill="#b3261e"/>
+              <circle cx="230" cy="90" r="10" fill="#fbf6ec"/>
+            </svg>
+            <figcaption>Location map coming soon. Embed your map here.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Ala-Too <span lang="ky">Ала-Тоо</span></p>
+      <p>&copy; 2026 Ala-Too. Demo website: online ordering is not connected to a payment system.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-panel">
+      <div class="cart-head">
+        <h2 id="cart-title">Your order</h2>
+        <button class="icon-button" id="cart-close" type="button" aria-label="Close order panel">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </button>
+      </div>
+
+      <p class="cart-empty" id="cart-empty">Your order is empty. Add a dish from the menu to begin.</p>
+      <ul class="cart-items" id="cart-items"></ul>
+
+      <dl class="totals" id="cart-totals">
+        <div><dt>Subtotal</dt><dd id="total-subtotal">$0.00</dd></div>
+        <div><dt id="tax-label">Estimated tax (8%)</dt><dd id="total-tax">$0.00</dd></div>
+        <div class="totals-grand"><dt>Total</dt><dd id="total-grand">$0.00</dd></div>
+      </dl>
+
+      <p class="cart-message" id="cart-message" role="status"></p>
+
+      <div class="cart-actions">
+        <button class="btn btn-primary" id="cart-checkout" type="button">Place order</button>
+        <button class="btn btn-quiet" id="cart-clear" type="button">Clear order</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="visually-hidden" id="live-region" role="status" aria-live="polite"></div>
+</body>
+</html>
