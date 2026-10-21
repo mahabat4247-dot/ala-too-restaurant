@@ -1,5 +1,3 @@
-# syntax=docker/dockerfile:1
-
 # ---- Build stage: install tooling and build dist/ ----
 FROM node:22-alpine AS build
 WORKDIR /app
@@ -11,7 +9,7 @@ COPY index.html styles.css script.js favicon.svg build.js ./
 RUN npm run build
 
 # ---- Runtime stage: serve dist/ with Nginx on port 80 ----
-FROM nginx:1.28-alpine AS runtime
+FROM nginx:1.27-alpine AS runtime
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html
