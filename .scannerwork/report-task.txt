@@ -1,0 +1,6 @@
+projectKey=ala-too-restaurant
+serverUrl=http://localhost:9000
+serverVersion=26.9.0.129388
+dashboardUrl=http://localhost:9000/dashboard?id=ala-too-restaurant
+ceTaskId=cec510a8-0bcc-45e9-8530-f125ac5d5982
+ceTaskUrl=http://localhost:9000/api/ce/task?id=cec510a8-0bcc-45e9-8530-f125ac5d5982
